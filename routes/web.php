@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KrsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [KrsController::class, 'index']);
+Route::get('/data', [KrsController::class, 'getdata']);
+Route::get('/changestatus/mangkir', [KrsController::class, 'changestatus'])->name('mangkir');
+Route::get('/changestatus/baseonpembayaran', [KrsController::class, 'baseonpembayaran'])->name('baseonpembayaran');
+Route::get('/moveaktif', [KrsController::class, 'MoveAktif']);
