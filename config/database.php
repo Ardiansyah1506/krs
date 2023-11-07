@@ -94,21 +94,27 @@ return [
         ],
         'siadin' => [
             'driver' => 'mysql',
-            'host' => env('SIADIN_DB_HOST'),
-            'port' => env('SIADIN_DB_PORT'),
+            'host' => env('KRS_DB_HOST'),
+            'port' => env('KRS_DB_PORT'),
             'database' => env('SIADIN_DB_DATABASE'),
-            'username' => env('SIADIN_DB_USERNAME'),
-            'password' => env('SIADIN_DB_PASSWORD'),
-            // ...
+            'username' => env('KRS_DB_USERNAME'),
+            'password' => env('KRS_DB_PASSWORD'),
         ],
         'siakad' => [
             'driver' => 'mysql',
-            'host' => env('SIAKAD_DB_HOST'),
-            'port' => env('SIAKAD_DB_PORT'),
+            'host' => env('KRS_DB_HOST'),
+            'port' => env('KRS_DB_PORT'),
             'database' => env('SIAKAD_DB_DATABASE'),
-            'username' => env('SIAKAD_DB_USERNAME'),
-            'password' => env('SIAKAD_DB_PASSWORD'),
-            // ...
+            'username' => env('KRS_DB_USERNAME'),
+            'password' => env('KRS_DB_PASSWORD'),
+        ],
+        'tampung' => [
+            'driver' => 'mysql',
+            'host' => env('KRS_DB_HOST'),
+            'port' => env('KRS_DB_PORT'),
+            'database' => env('TAMPUNG_DB_DATABASE'),
+            'username' => env('KRS_DB_USERNAME'),
+            'password' => env('KRS_DB_PASSWORD'),
         ],
 
     ],
