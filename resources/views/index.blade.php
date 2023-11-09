@@ -3,7 +3,8 @@
 
 @section('content')
 
-<div class="w-3/5 h-3/5 flex justify-center items-center">
+<div class="w-3/5 h-3/5 flex justify-center items-center flex-col gap-y-5">
+    <h1 class="text-2xl font-bold">Apps Persiapan KRS</h1>
     <table class="w-full text-sm  text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 text-center uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -23,8 +24,8 @@
 
                 <td class="px-6 py-4">
                     <div class="flex gap-x-4">
-                        <a href="Route{{ 'mangkir' }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Update</a>
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Restore</a>
+                        <a href="{{ Route ('updatemangkir')}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Update</a>
+                        <a href="{{ Route ('restoremangkir')}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Restore</a>
                     </div>
                 </td>
             </tr>
@@ -35,8 +36,8 @@
 
                 <td class="px-6 py-4">
                     <div class="flex gap-x-4 items-center">
-                        <a href="{{ Route('baseonpembayaran') }}}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Update</a>
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Restore</a>
+                        <a href="{{ Route('baseonpembayaran') }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Update</a>
+                        <a href="{{ Route('restorebaseonpembayaran') }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Restore</a>
                     </div>
                 </td>
             </tr>
@@ -47,8 +48,8 @@
 
                 <td class="px-6 py-4">
                     <div class="flex gap-x-4">
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Update</a>
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Restore</a>
+                        <a href="{{ Route('changestatuscuti') }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Update</a>
+                        <a href="{{ Route('restoredatacuti') }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Restore</a>
                     </div>
                 </td>
             </tr>

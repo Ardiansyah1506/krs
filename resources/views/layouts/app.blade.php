@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body class="h-screen w-screen flex justify-center items-center">
+<body class="h-screen w-screen flex justify-center items-center ">
         @yield('content')
 </body>
 </html>

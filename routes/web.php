@@ -20,6 +20,11 @@ use App\Http\Controllers\KrsController;
 
 Route::get('/', [KrsController::class, 'index']);
 Route::get('/data', [KrsController::class, 'getdata']);
-Route::get('/changestatus/mangkir', [KrsController::class, 'changestatus'])->name('mangkir');
+Route::get('/table', [KrsController::class, 'createTable']);
+Route::get('/changestatus/mangkir', [KrsController::class, 'changestatusmangkir'])->name('updatemangkir');
+Route::get('/restore/mangkir', [KrsController::class, 'restoreStatusMangkir'])->name('restoremangkir');
 Route::get('/changestatus/baseonpembayaran', [KrsController::class, 'baseonpembayaran'])->name('baseonpembayaran');
+Route::get('/restore/baseonpembayaran', [KrsController::class, 'restorebaseonpembayaran'])->name('restorebaseonpembayaran');
+Route::get('/changestatus/mhscuti', [KrsController::class, 'changestatuscuti'])->name('changestatuscuti');
+Route::get('/restore/mhscuti', [KrsController::class, 'restoreDataCuti'])->name('restoredatacuti');
 Route::get('/moveaktif', [KrsController::class, 'MoveAktif']);
